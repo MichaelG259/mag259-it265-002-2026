@@ -52,9 +52,9 @@ My game studio aims to create games that are fun on their own, but also intentio
 ## Unique Selling Point (USP)
 *What will make your games stand out from others, particularly in the indie/board game space?*
 
-> [Replicating the house rule phenomenon in a digital space.]
+- [Replicating the house rule phenomenon in a digital space.]
 
----
+  ---
 
 ## Tools and Technology
 *What tools and platforms will you use to develop, test, and publish your games?*
@@ -78,7 +78,7 @@ My game studio aims to create games that are fun on their own, but also intentio
 
 -- **Sketches/Logo**:
 
--- 
+-- https://michaelg259.github.io/mag259-it265-002-2026/logodraft.png
 
 ## Additional Notes
 *Include any other ideas, inspirations, or thoughts related to your studio or project.*
