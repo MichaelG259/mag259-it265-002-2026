@@ -78,10 +78,8 @@ My game studio aims to create games that are fun on their own, but also intentio
 
 -- **Sketches/Logo**:
 
----
+-- 
 
 ## Additional Notes
 *Include any other ideas, inspirations, or thoughts related to your studio or project.*
 Not sure if something like this is feasable at my current skill level, but it is what I would like to try.
-
-> [Free space for brainstorming!]
