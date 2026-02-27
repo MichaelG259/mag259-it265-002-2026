@@ -63,6 +63,36 @@ The attacker may roll for a chance to: gain an extra move for one of their units
 Dice rolls may result in no event occuring.
 Board is divided into a grid where all units and tiles reside in a grid space. Line of sight is determined by grid column. Some attacking units may be larger than one grid space.
 
+Dice Outcomes:
+Defender: 
+1 - Place Impassable Tile
+2 - Bonus move for 1 unit
+3 - Forcibly Reveal Enemy Unit (On condition request)
+4 - AOE Attack
+5 - Nothing
+6 - Nothing
+
+Attacker:
+1 - Place Impassable Tile OR Destroy an Impassable tile
+2 - Bonus move for 1 unit
+3 - Freeze enemy unit for next turn
+4 - Gain bonus unit (placed at far end of board)
+5-Nothing
+6-Nothing
+
+All rolls take place AFTER that players turn. 
+Attacking units cannot move diagonally.
+The first unit in a visible column are destroyed unless hidden by an impassable tile.
+Attacking units cannot move into or past a currently visible column, unless the space they are moving into or past is obstructed by an impassable tile.
+Dice roll does not occur on setup turn. Defender places their units first, then the attacker places their units. Then the defender plays their first turn.
+AOE attack destroys units on the player selected tile, and any orthogonally adjacent.
+Attacker is required to announce when their unit is destroyed for all units that were destroyed. A "corpse" is placed on that tile.
+Attacking units may move 1-2 spaces in any orthogonal direction per turn. Defending units may move 1-2 spaces left or right on their turn.
+Destroyed attacking units become impassable and immovable, but do not block sightlines.
+Impassable tiles placed on top of attacking units destroy them.
+Attacker must alert defender if they are one turn away from winning (2 spaces from tile in row 1)
+Attacker places their units in rows 10 or 11 on their setup turn.
+
 ---
 
 ## Story and Setting
@@ -169,9 +199,8 @@ Risks could be minimized by implementing cheaters punishments; punishments in ga
 - Ensure sketches accurately represent the game’s concept and theme  
 - Maintain coherence with the game’s style and theme  
 
-<!-- 
-Upload sketches here, or describe the key visual elements in detail if unavailable. 
--->
+<img width="476" height="594" alt="image" src="https://github.com/user-attachments/assets/fc48df8e-9796-48bf-af18-618706182fe0" />
+<img width="413" height="487" alt="image" src="https://github.com/user-attachments/assets/3b5a704c-5b51-43b5-888a-be9ea914bde4" />
 
 ---
 
@@ -193,27 +222,28 @@ This game is unique because of its asymmetrical gameplay combined with informati
 
 ### Feedback 1
 - **Reviewer**:  
-  <!-- Enter name and relation to you -->
+  Carter Grady, Younger Sibling
 - **Summary**:  
-  <!-- Summarize feedback focusing on concept, mechanics, and style -->
+  Originally played with the rule that only the first unit in a visible row was destroyed. Unintented strategy emerged where attacker lined up all units in a row and was unstoppable given that the defender assumed row was now empty, and had little time to confirm. Strategy pre-emptively removed, pending further playtesting.
 - **Refinement**:  
-  <!-- Explain how this feedback will improve the design -->
+  Attacking units should not be subject to movement restriction into visible column if the tile being moved into was obstructed by an impassable time. Additionally suggested nerfs to the column strategy.
+  Suggested potential revision, double rows for defenders to allow stacking, which would complement original method of only first unit is destroyed. Pending playtesting.
 
 ### Feedback 2
 - **Reviewer**:  
-  <!-- Enter name and relation to you -->
+  Jacob Grady, Younger Sibling
 - **Summary**:  
-  <!-- Summarize feedback focusing on concept, mechanics, and style -->
+  Stated that defending side felt underpowered, suggested many potential nerfs and buffs to bring balance.
 - **Refinement**:  
-  <!-- Explain how this feedback will improve the design -->
+  Suggested that attacker must also state the column in which their unit was destroyed in. Suggested defending side movement distance increased to 2 from 1. Brought up potential imbalance arise from adding rule that states attackers cannot move past visible sightlines in addition to into. This suggestion was noted but ignored. Suggested deceased units become impassable but visible through. Suggested piercing rule be reverted.
 
 ### Feedback 3
 - **Reviewer**:  
-  <!-- Enter name and relation to you -->
+  Lillian Grady, Twin Sibling
 - **Summary**:  
-  <!-- Summarize feedback focusing on concept, mechanics, and style -->
+  Stated game was currently attacker sided due to witnessing the previous playtest sessions, in which the winrate for attackers was 100%.
 - **Refinement**:  
-  <!-- Explain how this feedback will improve the design -->
+  Suggested warning system for when attacking player is about to win, akin to "UNO". Removed piercing rule, reverted to first in column.
 
 
 ---
