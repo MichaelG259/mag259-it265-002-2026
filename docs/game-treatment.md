@@ -83,8 +83,9 @@ Attacker:
 All rolls take place AFTER that players turn. 
 Attacking units cannot move diagonally.
 The first unit in a visible column are destroyed unless hidden by an impassable tile.
-Attacking units cannot move into or past a currently visible column, unless the space they are moving into or past is obstructed by an impassable tile.
+Attacking units may move into a currently visible column, but they will be destroyed if the defender opts not to move.
 Dice roll does not occur on setup turn. Defender places their units first, then the attacker places their units. Then the defender plays their first turn.
+Dice rolls apply only after movement.
 AOE attack destroys units on the player selected tile, and any orthogonally adjacent.
 Attacker is required to announce when their unit is destroyed for all units that were destroyed. A "corpse" is placed on that tile.
 Attacking units may move 1-2 spaces in any orthogonal direction per turn. Defending units may move 1-2 spaces left or right on their turn.
@@ -245,6 +246,13 @@ This game is unique because of its asymmetrical gameplay combined with informati
 - **Refinement**:  
   Suggested warning system for when attacking player is about to win, akin to "UNO". Removed piercing rule, reverted to first in column.
 
+### Feedback 4
+- **Reviewer**:  
+  Dany, Classmate
+- **Summary**:  
+  First Defender win. 
+- **Refinement**:  
+  Questioned applicability of impassable tile. Removed Rule "Attacking units cannot move into or past a currently visible column, unless the space they are moving into or past is obstructed by an impassable tile."
 
 ---
 
