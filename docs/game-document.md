@@ -5,6 +5,13 @@ Game Elements: Strategic, asymetrical gameplay that tests a players wit and tact
 
 Players: 2
 
+# CHANGELOG:
+* Omitted multiple special effects variations from the physical prototype, such as revealing enemy units. Only implemented impassable tiles.
+* Neglected to implement attacking units with different sizes and speeds.
+* Reverted to piercing (all attackers visible in row are destroyed, instead of only first).
+* Allowed units to not move, solidified movement before destruction order.
+* Attackers may move into line of sight.
+
 # TECHNICAL SPECS
 Technical Form: 2D
 
