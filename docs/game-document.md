@@ -7,10 +7,17 @@ Players: 2
 
 # CHANGELOG:
 * Omitted multiple special effects variations from the physical prototype, such as revealing enemy units. Only implemented impassable tiles.
+Done for simplicity's sake. Some affects were too difficult to implement to justify adding to a prototype.
 * Neglected to implement attacking units with different sizes and speeds.
+Too complex for the movement system in the prototype. Speeds would have been possible, but would break balance without special effects.
 * Reverted to piercing (all attackers visible in row are destroyed, instead of only first).
-* Allowed units to not move, solidified movement before destruction order.
+Simpler logistically, and better suited the strategy of the game.
+* Allowed units to not move. 
+Prevented edge case where stuck units would softlock the game. P
+* Solidified movement before destruction order.
+Required for destruction implementation.
 * Attackers may move into line of sight.
+Prevented edge case where surrounded units could theoretically infinitely delay a defender win.
 
 # TECHNICAL SPECS
 Technical Form: 2D
