@@ -1,0 +1,191 @@
+[gd_scene format=4 uid="uid://osxey57sjqdd"]
+
+[ext_resource type="Script" uid="uid://io1rbj3kiqyt" path="res://advance.gd" id="1_n57lp"]
+[ext_resource type="Texture2D" uid="uid://87kufejid2pq" path="res://tile.png" id="1_qudjv"]
+[ext_resource type="Texture2D" uid="uid://bxmvj14qfj7v8" path="res://tileconcrete.png" id="2_r2850"]
+[ext_resource type="Texture2D" uid="uid://c0gsw263y1kyq" path="res://redguy.png" id="3_ovv8y"]
+[ext_resource type="Texture2D" uid="uid://2lng8ptoqubw" path="res://transparent.png" id="4_2k4ja"]
+[ext_resource type="Texture2D" uid="uid://dnceyu0cvg10u" path="res://blueguy.png" id="4_n57lp"]
+[ext_resource type="Texture2D" uid="uid://dayt72b5vgqc2" path="res://impassable.png" id="5_1ore7"]
+[ext_resource type="Texture2D" uid="uid://cxyc7gvdq5xjg" path="res://redguydead.png" id="7_7sfgx"]
+[ext_resource type="Texture2D" uid="uid://cw4jd54eju1iq" path="res://impassablecrushed.png" id="9_v0ino"]
+[ext_resource type="Texture2D" uid="uid://be3gosikotqn" path="res://dice1.png" id="9_yrpeq"]
+[ext_resource type="Texture2D" uid="uid://qctk1j4cmhhm" path="res://puddle.png" id="10_40ggg"]
+[ext_resource type="Texture2D" uid="uid://syvut2f5l5ky" path="res://dice2.png" id="10_v0ino"]
+[ext_resource type="Texture2D" uid="uid://bijbhudndhtcy" path="res://dice3.png" id="11_40ggg"]
+[ext_resource type="Texture2D" uid="uid://b2pcq10tbnxci" path="res://dice4.png" id="12_3vfto"]
+[ext_resource type="Texture2D" uid="uid://dbg8eybhm41rx" path="res://dice5.png" id="13_t4nyt"]
+[ext_resource type="Texture2D" uid="uid://cwa5h5il5yein" path="res://dice6.png" id="14_als4r"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k4ja"]
+texture = ExtResource("1_qudjv")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ovv8y"]
+texture = ExtResource("2_r2850")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7ay8j"]
+tile_size = Vector2i(48, 48)
+custom_data_layer_0/name = "HasUnit"
+custom_data_layer_0/type = 1
+sources/1 = SubResource("TileSetAtlasSource_ovv8y")
+sources/0 = SubResource("TileSetAtlasSource_2k4ja")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ore7"]
+texture = ExtResource("3_ovv8y")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7sfgx"]
+texture = ExtResource("4_n57lp")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2vxf"]
+texture = ExtResource("4_2k4ja")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ul2n4"]
+texture = ExtResource("7_7sfgx")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e20rm"]
+texture = ExtResource("5_1ore7")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_40ggg"]
+texture = ExtResource("9_v0ino")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3vfto"]
+texture = ExtResource("10_40ggg")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ul2n4"]
+tile_size = Vector2i(48, 48)
+sources/0 = SubResource("TileSetAtlasSource_1ore7")
+sources/1 = SubResource("TileSetAtlasSource_7sfgx")
+sources/3 = SubResource("TileSetAtlasSource_e2vxf")
+sources/5 = SubResource("TileSetAtlasSource_e20rm")
+sources/4 = SubResource("TileSetAtlasSource_ul2n4")
+sources/6 = SubResource("TileSetAtlasSource_40ggg")
+sources/7 = SubResource("TileSetAtlasSource_3vfto")
+
+[sub_resource type="LabelSettings" id="LabelSettings_n57lp"]
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ore7"]
+font_size = 24
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1cifq"]
+texture = ExtResource("9_yrpeq")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ifnbo"]
+texture = ExtResource("10_v0ino")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7si3f"]
+texture = ExtResource("11_40ggg")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d40ho"]
+texture = ExtResource("12_3vfto")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s6cyt"]
+texture = ExtResource("13_t4nyt")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5f2oj"]
+texture = ExtResource("14_als4r")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7sfgx"]
+tile_size = Vector2i(128, 128)
+sources/0 = SubResource("TileSetAtlasSource_1cifq")
+sources/1 = SubResource("TileSetAtlasSource_ifnbo")
+sources/2 = SubResource("TileSetAtlasSource_7si3f")
+sources/3 = SubResource("TileSetAtlasSource_d40ho")
+sources/4 = SubResource("TileSetAtlasSource_s6cyt")
+sources/5 = SubResource("TileSetAtlasSource_5f2oj")
+
+[node name="Node2D" type="Node2D" unique_id=282822754]
+script = ExtResource("1_n57lp")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2058616865]
+
+[node name="TerrainLayer" type="TileMapLayer" parent="." unique_id=840889023]
+z_as_relative = false
+tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAABD//wEAAAAAAAAAAAD//wIAAAAAAAAAADAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAACD//wMAAAAAAAAAAAD//wQAAAAAAAAAAAAAAAQAAAAAAAAAAAD+/wQAAAAAAAAAAAD+/wMAAAAAAAAAADD+/wEAAAAAAAAAADD+/wIAAAAAAAAAAAD+/wAAAAAAAAAAADABAAAAAAAAAAAAAAABAAEAAAAAAAAAADABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAAAACD9/wQAAAAAAAAAAAD9/wMAAAAAAAAAADD9/wIAAAAAAAAAAAD9/wEAAAAAAAAAAAD9/wAAAAAAAAAAAAACAAQAAAAAAAAAAAACAAMAAAAAAAAAADACAAIAAAAAAAAAAAACAAEAAAAAAAAAACACAAAAAAAAAAAAADADAAAAAAAAAAAAAAADAAEAAAAAAAAAADADAAIAAAAAAAAAAAADAAMAAAAAAAAAAAADAAQAAAAAAAAAAAADAP7/AAAAAAAAAAADAP//AAAAAAAAAAACAP//AAAAAAAAAAACAP7/AAAAAAAAAAAAAP7/AAAAAAAAABABAP7/AAAAAAAAAAABAP//AAAAAAAAAAAAAP//AAAAAAAAAAD/////AAAAAAAAAAD+////AAAAAAAAACD9////AAAAAAAAAAD9//7/AAAAAAAAADD+//7/AAAAAAAAABD///7/AAAAAAAAAAADAP3/AAAAAAAAAAADAPz/AAAAAAAAAAADAPv/AAAAAAAAAAADAAUAAAAAAAAAAAACAAUAAAAAAAAAAAABAAUAAAAAAAAAAAAAAAUAAAAAAAAAAAD//wUAAAAAAAAAAAD+/wUAAAAAAAAAAAD9/wUAAAAAAAAAAAD9//3/AAAAAAAAAAD+//3/AAAAAAAAAAD///3/AAAAAAAAAAAAAP3/AAAAAAAAACABAP3/AAAAAAAAADACAP3/AAAAAAAAABACAPz/AAAAAAAAACAAAPz/AAAAAAAAADABAPz/AAAAAAAAAAD///z/AAAAAAAAAAD+//z/AAAAAAAAABD9//z/AAAAAAAAAAD9//v/AAAAAAAAAAD+//v/AAAAAAAAADD///v/AAAAAAAAAAAAAPv/AAAAAAAAAAACAPv/AAAAAAAAAAABAPv/AAAAAAAAACD9//r/AQAAAAAAAAD+//r/AQAAAAAAAAD///r/AQAAAAAAAAABAPr/AQAAAAAAAAAAAPr/AQAAAAAAAAACAPr/AQAAAAAAAAADAPr/AQAAAAAAAAA=")
+tile_set = SubResource("TileSet_7ay8j")
+
+[node name="GamePieceLayer" type="TileMapLayer" parent="." unique_id=1240104236]
+z_index = 2
+z_as_relative = false
+tile_set = SubResource("TileSet_ul2n4")
+
+[node name="InstructionLabel" type="Label" parent="." unique_id=171915942]
+offset_left = -576.0
+offset_top = -320.0
+offset_right = -160.0
+offset_bottom = 112.0
+text = "Defending Player Setup"
+label_settings = SubResource("LabelSettings_n57lp")
+autowrap_mode = 2
+
+[node name="ErrorLabel" type="Label" parent="." unique_id=815179705]
+offset_left = -576.0
+offset_top = 56.0
+offset_right = -296.0
+offset_bottom = 135.0
+label_settings = SubResource("LabelSettings_1ore7")
+metadata/_edit_use_anchors_ = true
+
+[node name="AttackerLayer" type="TileMapLayer" parent="." unique_id=2072829124]
+z_index = 2
+z_as_relative = false
+tile_set = SubResource("TileSet_ul2n4")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=478104154]
+oversampling_override = 1.0
+dialog_text = "Please pass device to next player."
+
+[node name="ValidTilesLayer" type="TileMapLayer" parent="." unique_id=33236470]
+z_index = 1
+z_as_relative = false
+tile_set = SubResource("TileSet_ul2n4")
+
+[node name="DiceLayer" type="TileMapLayer" parent="." unique_id=543837725]
+position = Vector2(320, 120)
+tile_set = SubResource("TileSet_7sfgx")
+navigation_enabled = false
+
+[node name="DiceEffectPreviousLabel" type="Label" parent="." unique_id=1298523382]
+offset_left = 224.0
+offset_top = -280.0
+offset_right = 536.0
+offset_bottom = -217.0
+autowrap_mode = 2
+
+[node name="DiceEffectLabel" type="Label" parent="." unique_id=2105942354]
+offset_left = 224.0
+offset_top = -144.0
+offset_right = 536.0
+offset_bottom = -72.0
+autowrap_mode = 2
