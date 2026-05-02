@@ -5,6 +5,8 @@ Game Elements: Strategic, asymetrical gameplay that tests a players wit and tact
 
 Players: 2
 
+DEMO: https://njit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5ba0ee7c-8f8e-4f53-829a-b43e0043b1be
+
 # CHANGELOG:
 * Omitted multiple special effects variations from the physical prototype, such as revealing enemy units. Only implemented impassable tiles.
 Done for simplicity's sake. Some affects were too difficult to implement to justify adding to a prototype.
