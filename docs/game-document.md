@@ -6,6 +6,7 @@ Game Elements: Strategic, asymetrical gameplay that tests a players wit and tact
 Players: 2
 
 DEMO: https://njit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5ba0ee7c-8f8e-4f53-829a-b43e0043b1be
+GAME: https://20boiledpotatoes.itch.io/advance
 
 # CHANGELOG:
 * Omitted multiple special effects variations from the physical prototype, such as revealing enemy units. Only implemented impassable tiles.
